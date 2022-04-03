@@ -1,2 +1,2 @@
 # MDSD
-Assignments in Model Based Software Engineering
+Assignments in Model Driven Software Engineering
