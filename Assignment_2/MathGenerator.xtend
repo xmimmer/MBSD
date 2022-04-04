@@ -9,14 +9,8 @@ class MathGenerator extends AbstractGenerator {
 		val math = resource.allContents.filter(MathExp).next
 		val result = math.compute
 		
-		// You can replace with hovering, see Bettini Chapter 8
 		result.displayPanel
 	}
-	
-	//
-	// Compute function: computes value of expression
-	// Note: written according to illegal left-recursive grammar, requires fix
-	//
 	
 	def static compute(MathExp math) {
 		variables.put(math.name, math.exp.computeExp) 

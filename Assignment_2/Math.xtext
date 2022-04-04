@@ -14,7 +14,6 @@ Exp returns Expression:
 Factor returns Expression:
 	Primary(('*' {Multiply.left=current} | '/' {Divide.left=current}) right=Primary)*;
 	
-
 Primary returns Expression:
 	Number | Parenthesis;
 
